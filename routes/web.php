@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('404', function () {
+    return view('404-page');
+})->name('404');
+
 Route::get('/', function () {
     return view('welcome');
 });
